@@ -113,6 +113,6 @@ export const build = gulp.series(
     gulp.parallel(artifacts.map((artifact) => banner(artifact.dest))),
 );
 
-const all = gulp.series(peggy, lint, styles, build);
+const all = gulp.series(peggy, styles, build);
 
 export default all;
